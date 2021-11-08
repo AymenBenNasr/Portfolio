@@ -1,5 +1,5 @@
 .profile {
-    background-color: rgb(193, 185, 238);
+    background-color: var(--white-blue);
     border-radius: 6px;
     width: 100%;
     display: inline-block;
@@ -29,4 +29,32 @@
 
 .profile_pic img {
     width: 100%;
+}
+
+.profile_infos {
+    top: 0;
+    left: 0;
+    margin: -40px 10px 30px;
+}
+
+.profile_infos .timeline .timeline_content{
+    margin-top: 2px;
+    margin-bottom: 12px;
+}
+
+.timeline .timelineItem_text{
+    font-size: 13.5px;
+    color: #787878;
+    font-weight: 400;
+}
+
+.timeline .timelineItem_text > span{
+    color: #000000;
+}
+
+.profile .btn_container{
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 20px !important; 
 }

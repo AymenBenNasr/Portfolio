@@ -1,5 +1,6 @@
 .timeline {
     padding : 0 !important;
+    margin-top: -40px;
 
 }
 
@@ -7,7 +8,7 @@
 /* Header styling */
 
 .timeline .title_header{
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 .timeline .timeline_header{
@@ -21,6 +22,13 @@
 .timeline .MuiTimelineItem-missingOppositeContent::before {
     display: none;
 }
+
+
+.timeline .main_separator{
+    height: 100px;
+
+}
+
 
 .timeline .dot_header {
     color:#E6E6E6 !important;
@@ -36,17 +44,31 @@
     color:#E6E6E6 !important;
     border-color: var(--main-color) !important;
     padding: 2px !important;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+
 }
 
 .timeline .MuiTimelineConnector-root {
     background-color:#E6E6E6;
 }
 
+.timeline .dot_header > .MuiSvgIcon-root {
+   
+}
+
+
+.timeline .MuiTimelineContent-root{
+    margin-top: -10px;
+}
 .timeline .seperator_items {
     padding-left: 20px !important;
 }
 
 .timeline .timeline_content {
+    margin-top: -5px !important;
     padding-top: 0px !important;
-    margin-bottom: 20px;
+    margin-bottom: 30px !important;
 }
+

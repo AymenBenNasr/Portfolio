@@ -2,15 +2,16 @@ import React from "react";
 import { Typography } from "@material-ui/core";
 
 import "./Profile.css";
-import PersonIcon, { CustomSeperator } from "@mui/icons-material/Person";
+import PersonIcon from "@mui/icons-material/Person";
 
 import resumeData from "../../utils/resumeData";
 
 import images from "../../assets/images/images.jpeg";
-import CustomTimeline from "../Timeline/Timeline";
+import CustomTimeline , { CustomSeperator } from "../Timeline/Timeline";
 import TimelineContent from '@mui/lab/TimelineContent';
 import { TimelineItem } from "@material-ui/lab";
-
+import CustomButton from "../Button/Button"
+import DownloadOutlinedIcon from '@mui/icons-material/DownloadOutlined';
 
 const Profile = () => {
   return (
@@ -24,10 +25,17 @@ const Profile = () => {
       </figure>
       <div className="profile_infos">
         <CustomTimeline icon={<PersonIcon />} >
+          <CustomTimelineItem title='Name' text={resumeData.name}/>
+          <CustomTimelineItem title='Title' text={resumeData.title}/>
+          <CustomTimelineItem title='Birthday' text={resumeData.birthday}/>
           
+
         </CustomTimeline>
         <br />
-        <button>button</button>
+        <div className="btn_container" style={{display :'flex'}}>
+          <CustomButton text={"Download CV"} icon={<DownloadOutlinedIcon />}/>
+        </div>
+        
       </div>
     </div>
   );
@@ -35,16 +43,16 @@ const Profile = () => {
 const CustomTimelineItem = ({ title, text, link }) => (
     <TimelineItem>
       <CustomSeperator />
-      <TimelineContent>
+      <TimelineContent className="timeline_content">
         {link ? (
-        <Typography>
+        <Typography className="timelineItem_text">
           <span>{title}: </span>
           <a href={link} target="_blank">
             {text}
           </a>
         </Typography>
         ) : (
-        <Typography>
+        <Typography className="timelineItem_text">
           <span>{title} : </span>
           {text}
         </Typography>
