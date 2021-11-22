@@ -12,8 +12,9 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import { TimelineItem } from "@material-ui/lab";
 import CustomButton from "../Button/Button"
 import DownloadOutlinedIcon from '@mui/icons-material/DownloadOutlined';
+  import CV from '../../assets/CV___.pdf'
 
-const Profile = () => {
+  const Profile = () => {
   return (
     <div className="profile container_shadow">
       <div className="profile_name">
@@ -33,7 +34,9 @@ const Profile = () => {
         </CustomTimeline>
         <br />
         <div className="btn_container" style={{display :'flex'}}>
-          <CustomButton text={"Download CV"} icon={<DownloadOutlinedIcon />}/>
+          <a href={CV} download="../../assets/CV___">
+          <CustomButton text={"Download CV"} icon={<DownloadOutlinedIcon />} />
+          </a>
         </div>
         
       </div>

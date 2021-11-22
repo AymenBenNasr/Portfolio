@@ -1,0 +1,12 @@
+.contact_info{
+    font-size: 14px !important;
+    color: #707070 !important;
+}
+
+.contact_info > span {
+    color: black !important;
+    font-weight: bold !important;
+}
+.infos{
+    align-content: center !important;
+}

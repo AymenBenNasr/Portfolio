@@ -1,0 +1,96 @@
+.about_me_text{
+    color: darkslategray !important;
+    font: smaller !important;
+    line-height: 22px !important;
+    white-space: pre-line ;
+}
+
+/* TimeLine */
+
+.resume_timeline .timeline_content .timeline_title{
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+
+.resume_timeline .timeline_content .timeline_date{
+    color: darkslategray !important;
+}
+
+.resume_timeline .timeline_content .timeline_description{
+    color: var(--gray-blue) !important;
+    font-size: small !important;
+    margin-top: 6px;
+}
+
+/* Services */
+
+.service {
+    height: 100% !important;
+    text-align: center !important;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.service .service_title{
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 25px !important;
+    text-align: center !important;
+}
+
+.service .service_description{
+    color: #989898 !important;
+    border-color: var(--main-color) !important;
+    margin-right: 5px !important;
+    text-align: center !important;
+}
+
+.service .service_icon > .MuiSvgIcon-root {
+    font-size: 46px !important;
+    margin-left: 0 !important;
+    font-weight: 300 !important;
+    color: var(--gray-blue);
+}
+
+.services_content{
+    display: flex !important;
+    justify-content: space-evenly !important;
+}
+
+.skill {
+    padding: 30px;
+    /* display: flex !important;
+    flex-direction: column !important; */
+    align-items: center !important;
+    height: 100% !important;
+    text-align: left !important;
+    background-color: var(--white-blue) !important;
+    border-radius: 8px;
+    min-height: 186px !important;
+    align-items: flex-start;
+
+}
+
+/* skills */
+
+.skill .chip {
+    background-color: var(--main-color);
+    color: white !important;
+    margin-right: 20px;
+    font-size: 18px !important;
+    
+}
+
+.skill .skill_name{
+
+     margin-bottom: 30px !important;
+
+}
+
+.skills-content{
+    display: flex !important;
+    justify-content: space-evenly !important;
+}
+.skill_grid{
+    
+}

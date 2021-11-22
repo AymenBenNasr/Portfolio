@@ -15,9 +15,10 @@ const Header = (props) => {
     const pathName = props?.location?.pathame;
 
   return (
-    <Navbar expand="lg" className="header">
+    
+    <Navbar expand="lg" sticky="top" className="header">
       
-      <Nav.Link as={NavLink} to="/">
+      <Nav.Link as={NavLink} to="/" className="header_navlink">
           
         <Navbar.Brand className="head_home">
           <HomeRoundedIcon />
@@ -26,20 +27,27 @@ const Header = (props) => {
       
       <Navbar.Toggle />
       <Navbar.Collapse>
-        <Nav>
+        <Nav className="header_left">
           {/* Resume Header */}
           <Nav.Link 
             as = {NavLink} 
             to = '/' 
-            className={pathName == "/" ? "header_link_active" : "header_link"}>
+            className={pathName ==="/" ? "header_link_active" : "header_link"}>
               Resume
           </Nav.Link>
           {/* Portfoilio Header */}
           <Nav.Link 
             as = {NavLink} 
             to = '/Portfolio' 
-            className={pathName == "/Portfolio" ? "header_link_active" : "header_link"}>
+            className={pathName === "/Portfolio" ? "header_link_active" : "header_link"}>
               Portfolio
+          </Nav.Link>
+          {/* Contact */}
+          <Nav.Link 
+            as = {NavLink} 
+            to = '/contact' 
+            className={pathName === "/contact" ? "header_link_active" : "header_link"}>
+              Contact
           </Nav.Link>
         </Nav>
 

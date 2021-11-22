@@ -1,8 +1,9 @@
 .profile {
-    background-color: var(--white-blue);
+    background-color: white;
     border-radius: 6px;
     width: 100%;
     display: inline-block;
+    
 }
 
 .profile_name {
@@ -12,11 +13,13 @@
 
 .profile_name .name {
     text-transform: uppercase ;
+    
     font-size: 17px;
     font-weight: bold;
 }
 
-.profile_name .title { 
+.profile_name .title {
+    font-weight: bold;
     font-size: 13px;
     color: #777;
 }
